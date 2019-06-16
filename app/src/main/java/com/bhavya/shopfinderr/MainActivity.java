@@ -36,12 +36,12 @@ public class MainActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                // TODO Inflate the login page
+                // Inflate the login page
                 if(signedIn) {
                     //go to home page
                     openHome();
                 } else {
-                    //TODO open login page, after successful login set signed in as true and go to home page
+                    // open login page, after successful login set signed in as true and go to home page
                     authenticate();
                     signedIn = true;
                     openHome();
